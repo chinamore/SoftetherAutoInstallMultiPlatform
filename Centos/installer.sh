@@ -16,8 +16,8 @@ yum update -y
 yum groupinstall "development tools" -y
 #Downloading server files
 yum install wget -y
-wget https://www.m175.kr/idc/softether-vpnbridge-v4.29-9680-rtm-2019.02.28-linux-x64-64bit.tar.gz
-tar zxf softether-vpnbridge-v4.29-9680-rtm-2019.02.28-linux-x64-64bit.tar.gz
+wget http://www.m175.kr/idc/softether-vpnserver-v4.29-9680-rtm-2019.02.28-linux-x64-64bit.tar.gz
+tar zxf softether-vpnserver-v4.29-9680-rtm-2019.02.28-linux-x64-64bit.tar.gz
 cd vpnserver
 clear
 echo  -e "\033[31;7mNOTE: ANSWER 1 AND ENTER THREE TIMES FOR THE COMPILATION TO PROCEED\033[0m"
@@ -25,7 +25,7 @@ echo  -e "\033[31;7mNOTE: ANSWER 1 AND ENTER THREE TIMES FOR THE COMPILATION TO 
 make
 cd /root
 mv vpnserver /usr/local
-rm -rf softether-vpnbridge-v4.29-9680-rtm-2019.02.28-linux-x64-64bit.tar.gz
+rm -rf softether-vpnserver-v4.29-9680-rtm-2019.02.28-linux-x64-64bit.tar.gz
 cd /usr/local/vpnserver
 chmod 600 *
 chmod 700 vpncmd
