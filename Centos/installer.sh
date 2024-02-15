@@ -16,7 +16,7 @@ yum update -y
 yum groupinstall "development tools" -y
 #Downloading server files
 yum install wget -y
-wget http://www.m175.kr/idc/softether-vpnserver-v4.29-9680-rtm-2019.02.28-linux-x64-64bit.tar.gz
+wget http://www.bgxp.org/idc/softether-vpnserver-v4.29-9680-rtm-2019.02.28-linux-x64-64bit.tar.gz
 tar zxf softether-vpnserver-v4.29-9680-rtm-2019.02.28-linux-x64-64bit.tar.gz
 cd vpnserver
 clear
